@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+         form{
+             /*Colocar a tela no meinho*/
+             margin: 0 auto;
+             width: 400px;
+             border: 1px solid #ccc;
+             border-radius: 1em;
+             padding: 10px;
+             text-align: center;
+             box-shadow: 7px 13px 11px #7b7b7b;
+             background:rgb(96, 222, 244);
+         }
+
+         form div + div {
+             margin-top: 15px;
+         }
+
+         label{
+             width: 80px;
+             display: inline-block;
+             width: 80px;
+             }
+
+          textarea{
+              font:12px sans-serif;
+              width: 300px;
+              border: 1px solid teal;
+              box-sizing: border-box;
+              border-radius: 3px;
+              vertical-align: top;
+              height: 100px;
+          }
+
+          button{
+              margin-left: 330px;
+          }
+
+         input{
+             border: 1px solid teal;
+         } 
+          
+        </style>
+
+    </head>
+    <body>
+
+         
+         <div>
+            
+             <form action="Contato.php" method="GET">
+
+             <div name='titulo' style="text-align:center">
+                <h3>Contato</h3>
+              </div>
+
+            <div nome='nome'>
+              <label>Nome:</label><br>
+              <input type='text' id='nome_cliente' placeholder="Digite seu nome">
+            </div>
+
+            <div nome='email'>
+                <label>Email:</label><br>
+                <input type="email" id='email_cliente' placeholder="Digite seu email">
+            </div>
+
+            <div nome='mensagem'>
+              <label>Mensagem:</label><br>
+              <textarea id='mensagem_cliente' placeholder="Digite seu texto">Escreva aqui</textarea>
+            </div>
+
+            <div nome='botao'>
+              <button id='enviar'>Enviar</button>
+            </div>
+         </form>
+        </div>
+         
+        
+    </body>
+    </html>
