@@ -1,0 +1,131 @@
+var humano = {}
+humano
+
+var pessoa = {
+	nome:'Charles',
+	sobrenome:'Bryan',
+	sexo:'M',
+	idade:29,
+	altura:1.86,
+	peso:82,
+	andando:false,
+    caminhouQuantosMetros:0,
+	fazerAniversario: 
+	function()
+	{
+		this.idade++
+	
+	},
+	andar:function(valor)
+	{
+		this.andando = true
+		this.caminhouQuantosMetros+=valor
+	},
+	parar:
+	function()
+	{
+		this.andando = false
+	},
+	nomeCompleto:
+	function()
+	{
+		return "Olá, Meu nome é" + this.nome + this.sobrenome+"!"
+	},
+	mostrarIdade:
+	function()
+	{
+		return "Olá eu tenho"+ this.idade + "anos!"
+	},
+	mostraPeso:
+	function()
+	{
+		return "Eu peso"+ this.peso+"Kg."
+	},
+    mostrarAltura:
+	function()
+	{
+	   return "Minha altura é"+ this.altura+"m."
+    },
+	apresentacao:
+	function()
+	{
+		var pronome = 'o'
+		if(this.sexo != 'M'){
+			pronome = 'a'
+		}
+		
+		var plural = 'anos' 
+		if(this.idade == 1){
+			plural= 'ano'
+		}
+		
+		var metrosCaminhados = 'metros'
+          if(this.caminhouQuantosMetros = 1){		
+	         metrosCaminhados = 'metro'
+		  } 
+		  
+		return "Olá, eu sou "+pronome+" " + this.nomeCompleto +", tenho " + this.idade +plural+" , "+this.altura+", meu peso é "+this.peso+" e, só hoje, eu já caminhei"+this.caminhouQuantosMetros+":"+metrosCaminhados+"!"
+	}
+	
+	
+}
+
+//  pessoa.nomeCompleto()
+// "Olá, Meu nome éCharlesBryan!"
+  
+//pessoa.idade
+//29
+
+//pessoa.peso
+//82
+
+//pessoa.fazerAniversario()
+//undefined
+//pessoa.fazerAniversario()
+//undefined
+//pessoa.fazerAniversario()
+//undefined
+//pessoa.idade
+//32
+
+//pessoa.andar(5)
+//undefined
+//pessoa.andar(10)
+//undefined
+//pessoa.andar(15)
+//undefined
+//pessoa.caminhouQuantosMetros
+//30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
